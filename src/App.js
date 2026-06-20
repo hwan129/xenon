@@ -52,14 +52,6 @@ function App() {
             <p className="eyebrow">STAT CALCULATOR</p>
             <h1 id="page-title">제논 스탯 계산기</h1>
           </div>
-          <button
-            className="reset-button"
-            type="button"
-            onClick={() => setStats(INITIAL_STATS)}
-            disabled={!hasValue}
-          >
-            <span aria-hidden="true">↻</span> 초기화
-          </button>
         </header>
 
         <div className="formula-card">
@@ -76,11 +68,19 @@ function App() {
         <div className="content-grid">
           <section className="input-panel" aria-labelledby="input-title">
             <div className="section-heading">
-              <div>
+              <div style={{ paddingRight: '20px' }}>
                 <p className="section-kicker">INPUT</p>
                 <h2 id="input-title">능력치 입력</h2>
               </div>
               <span>숫자만 입력해 주세요</span>
+              <button
+                className="reset-button"
+                type="button"
+                onClick={() => setStats(INITIAL_STATS)}
+                disabled={!hasValue}
+              >
+                <span aria-hidden="true">↻</span> 초기화
+              </button>
             </div>
 
             <div className="field-grid">
@@ -121,8 +121,17 @@ function App() {
             </div>
 
             <div className="equation-result">
-              <span>입력값을 공식에 적용한 결과입니다</span>
+              <span>{'{(힘+덱+럭)+(공격력*6)+(올스탯*20)}'}</span>
+              <span>이 계산식 사용함</span>
               <span className="check" aria-hidden="true">✓</span>
+            </div>
+            <div className="equation-result">
+              <div>저자본용 추옵</div>
+              <div>140제 220급</div>
+              <div>150제 230급</div>
+              <div>160제 240급</div>
+              <div>200제 280급</div>
+              <div>250제 330급</div>
             </div>
           </aside>
         </div>
