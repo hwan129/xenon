@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/xenon/static/css/main.d280a23b.css",
+    "main.js": "/xenon/static/js/main.7862ec3c.js",
+    "index.html": "/xenon/index.html",
+    "main.d280a23b.css.map": "/xenon/static/css/main.d280a23b.css.map",
+    "main.7862ec3c.js.map": "/xenon/static/js/main.7862ec3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d280a23b.css",
+    "static/js/main.7862ec3c.js"
+  ]
+}
